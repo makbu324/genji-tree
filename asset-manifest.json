@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/genji-tree/static/css/main.f855e6bc.css",
-    "main.js": "/genji-tree/static/js/main.303a27fb.js",
+    "main.css": "/genji-tree/static/css/main.3c0dbdcd.css",
+    "main.js": "/genji-tree/static/js/main.7554fc10.js",
     "static/js/453.53cb6ab8.chunk.js": "/genji-tree/static/js/453.53cb6ab8.chunk.js",
     "static/media/logo.svg": "/genji-tree/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/genji-tree/index.html",
-    "main.f855e6bc.css.map": "/genji-tree/static/css/main.f855e6bc.css.map",
-    "main.303a27fb.js.map": "/genji-tree/static/js/main.303a27fb.js.map",
+    "main.3c0dbdcd.css.map": "/genji-tree/static/css/main.3c0dbdcd.css.map",
+    "main.7554fc10.js.map": "/genji-tree/static/js/main.7554fc10.js.map",
     "453.53cb6ab8.chunk.js.map": "/genji-tree/static/js/453.53cb6ab8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.303a27fb.js"
+    "static/css/main.3c0dbdcd.css",
+    "static/js/main.7554fc10.js"
   ]
 }
