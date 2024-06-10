@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { useCallback, useEffect, useState, useRef} from 'react';
@@ -491,7 +490,8 @@ const changeNodeLabelName = (num, val) => {
 }
 
   return (
-      <div style={{fontSize: "large"}}>
+      <div style={{fontSize: "large", position: "absolute",
+        top: 0, right: 0, bottom: 0, left: 0, height: "60vh"}}>
           <br></br>
           <div>
               <button onClick={() => showAll()} style={{fontSize: "large"}}>Show All</button>
