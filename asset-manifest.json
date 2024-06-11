@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/genji-tree/static/css/main.dc1789e3.css",
-    "main.js": "/genji-tree/static/js/main.9717c86c.js",
+    "main.js": "/genji-tree/static/js/main.917234a0.js",
     "static/js/453.53cb6ab8.chunk.js": "/genji-tree/static/js/453.53cb6ab8.chunk.js",
     "index.html": "/genji-tree/index.html",
     "main.dc1789e3.css.map": "/genji-tree/static/css/main.dc1789e3.css.map",
-    "main.9717c86c.js.map": "/genji-tree/static/js/main.9717c86c.js.map",
+    "main.917234a0.js.map": "/genji-tree/static/js/main.917234a0.js.map",
     "453.53cb6ab8.chunk.js.map": "/genji-tree/static/js/453.53cb6ab8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc1789e3.css",
-    "static/js/main.9717c86c.js"
+    "static/js/main.917234a0.js"
   ]
 }
