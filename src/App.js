@@ -609,7 +609,7 @@ return (
                                 character_names.map(
                                         function(names, i) {
                                                 return <li><div className="a" id={names[0]+names[1]} style={{margin: '4px'}}>
-                                                                <input type="checkbox" id={"ch"+i.toString()} onChange={(e) => enableDisable(0, e.target.checked)} />
+                                                                <input type="checkbox" id={"ch"+i.toString()} onChange={(e) => enableDisable(i, e.target.checked)} />
                                                                 <select onChange={(e) => changeNodeLabelName(i, e.target.value)} style={{fontSize: "large", width: "175px"}} id={"dd" + +i.toString()}>
                                                                         <option value={names[0]} selected>{names[0]}</option>
                                                                         <option value={names[1].slice(0, names[1].indexOf("（"))}>{names[1]}</option>
