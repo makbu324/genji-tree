@@ -34,7 +34,7 @@ function App() {
         { id: 'Aoi', position: { x: 230, y: 205 }, data: { label: 'Aoi' }, draggable: true, style: {border: '2px solid #00c8fa'}, hidden: true},
         { id: 'Yūgiri', position: {x: -130, y: 425 }, data: { label: 'Yūgiri' }, draggable: true, style: {border: '2px solid #578fff'}, hidden: true},
         { id: 'Akashi Princess', position: { x: -300, y: 290  }, data: { label: 'Akashi Princess' }, draggable: true, style: {border: '2px solid #7cdb53'}, hidden: true},
-        { id: 'Kokiden Consort', position: { x: -630, y: 85 }, data: { label: 'Kokiden Consort' }, draggable: true, style: {border: '2px solid #db537c'}, hidden: true},
+        { id: 'Kokiden Consort 1', position: { x: -630, y: 85 }, data: { label: 'Kokiden Consort 1' }, draggable: true, style: {border: '2px solid #db537c'}, hidden: true},
         { id: 'Emperor Suzaku', position: { x: -550, y: 168  }, data: { label: 'Emperor Suzaku' }, draggable: true, style: {border: '2px solid #d98e04'}, hidden: true},
         { id: 'Zenbō', position: {x: -385, y: -200 }, data: { label: 'Zenbō' }, draggable: true, style: {border: '2px solid #82708c'}, hidden: true},
         { id: 'Lady Rokujō', position: {x: -647.734, y: -241.997 }, data: { label: 'Lady Rokujō' }, draggable: true, style: {border: '2px solid #fc1717'}, hidden: true},
@@ -66,7 +66,7 @@ function App() {
         { id: 'Iyo no Suke', position: { x: -1075, y: 422 }, data: { label: 'Iyo no Suke' }, draggable: true, style: {border: '2px solid #005c0b'}, hidden: true},
         { id: 'Ki no Kami', position: { x: -1109, y: 608 }, data: { label: 'Ki no Kami' }, draggable: true, style: {border: '2px solid #80231b'}, hidden: true},
         { id: 'Nokiba no Ogi', position: { x: -836, y: 558 }, data: { label: 'Nokiba no Ogi' }, draggable: true, style: {border: '2px solid #e675de'}, hidden: true},
-        { id: 'Kokiden Consort II', position: { x: 505, y: 370 }, data: { label: 'Kokiden Consort II' }, draggable: true, style: {border: '2px solid #0ee39f'}, hidden: true},
+        { id: 'Kokiden Consort 2', position: { x: 505, y: 370 }, data: { label: 'Kokiden Consort 2' }, draggable: true, style: {border: '2px solid #0ee39f'}, hidden: true},
         { id: 'Asagao', position: { x: -708, y: -96 }, data: { label: 'Asagao' }, draggable: true, style: {border: '2px solid #c0ff99'}, hidden: true},
         { id: 'Genji\'s Horse', position: { x: -1000, y: 350 }, data: { label: 'Genji\'s Horse' }, draggable: true, style: {border: '2px solid #b4d68b'}, hidden: true},
         { id: 'Cat', position: { x: -10, y: 685 }, data: { label: 'Cat' }, draggable: true, style: {border: '2px solid #c98a00'}, hidden: true},
@@ -100,7 +100,7 @@ function App() {
         { id: 'Genji + The Akashi Lady', position: { x: -282, y: 250 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Princess Omiya + Minister of the Left', position: { x: 425, y: 27 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Aoi', position: { x: 125, y: 305 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Kiritsubo Emperor + Kokiden Consort', position: { x: -360, y: 80 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Kiritsubo Emperor + Kokiden Consort 1', position: { x: -360, y: 80 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Lady Rokujō', position: { x: -300, y: -69 }, data: { label: '💔' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Yūgao', position: { x: 185, y: 313 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Tō no Chūjō + Yūgao', position: { x: 350, y: 375 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
@@ -121,7 +121,7 @@ function App() {
         { id: 'Genji + Kogimi', position: { x: -665, y: 395 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Utsusemi', position: { x: -750, y: 485 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Iyo no Suke + Utsusemi', position: { x: -940, y: 520 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Emperor Reizei + Kokiden Consort II', position: { x: 187, y: 433 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Emperor Reizei + Kokiden Consort 2', position: { x: 187, y: 433 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Asagao', position: { x: -700, y: 115 }, data: { label: '💔' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Gosechi Dancer', position: { x: -840, y: 297 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Higekuro + Higekuro\'s Wife', position: { x: 590, y: 540 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
@@ -186,10 +186,10 @@ var relationships = useRef([
         { id: 'Gen no Naishi - ❤️', source: 'Gen no Naishi', target: 'Genji + Gen no Naishi', style:{ stroke: '#8d9181', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: '💍 -> Yūgiri', source: 'Genji + Aoi', target: 'Yūgiri', style:{ stroke: '#578fff', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: '💍 -> Akashi Princess', source: 'Genji + The Akashi Lady', target: 'Akashi Princess', style:{ stroke: '#7cdb53', strokeWidth: '2'},type: 'straight', hidden: true},
-        { id: 'Kiritsubo Emperor - 💍 - 3', source: 'Kiritsubo Emperor', target: 'Kiritsubo Emperor + Kokiden Consort', style:{ stroke: '#782c4b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Kokiden Consort - 💍', source: 'Kokiden Consort', target: 'Kiritsubo Emperor + Kokiden Consort', style:{ stroke: '#db537c', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: '💍 -> Emperor Suzaku', source: 'Kiritsubo Emperor + Kokiden Consort', target: 'Emperor Suzaku', style:{ stroke: '#d98e04', strokeWidth: '2'},type: 'straight', hidden: true},
-        { id: 'Genji - 💔', source: 'Genji', target: 'Genji + Lady Rokujō', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Kiritsubo Emperor - 💍 - 3', source: 'Kiritsubo Emperor', target: 'Kiritsubo Emperor + Kokiden Consort 1', style:{ stroke: '#782c4b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Kokiden Consort 1 - 💍', source: 'Kokiden Consort 1', target: 'Kiritsubo Emperor + Kokiden Consort 1', style:{ stroke: '#db537c', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: '💍 -> Emperor Suzaku', source: 'Kiritsubo Emperor + Kokiden Consort 1', target: 'Emperor Suzaku', style:{ stroke: '#d98e04', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'Genji - 💔 - 1', source: 'Genji', target: 'Genji + Lady Rokujō', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Lady Rokujō - 💔', source: 'Lady Rokujō', target: 'Genji + Lady Rokujō', style:{ stroke: '#fc1717', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: '💍 -> Tō no Chūjō', source: 'Princess Omiya + Minister of the Left', target: 'Tō no Chūjō', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Genji - ❤️ - 3', source: 'Genji', target: 'Genji + Yūgao', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
@@ -197,7 +197,7 @@ var relationships = useRef([
         { id: 'Yūgao - 💍', source: 'Yūgao', target: 'Tō no Chūjō + Yūgao', style:{ stroke: '#f56ee5', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Tō no Chūjō - 💍 - 1', source: 'Tō no Chūjō', target: 'Tō no Chūjō + Yūgao', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: '💍 -> Tamakazura', source: 'Tō no Chūjō + Yūgao', target: 'Tamakazura', style:{ stroke: '#d64f6c', strokeWidth: '2'},type: 'straight', hidden: true},
-        { id: 'Minister of the Right - Kokiden Consort', source: 'Minister of the Right', target: 'Kokiden Consort', style:{ stroke: '#40e3a7', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',},  hidden: true, type: 'custom'},
+        { id: 'Minister of the Right - Kokiden Consort 1', source: 'Minister of the Right', target: 'Kokiden Consort 1', style:{ stroke: '#40e3a7', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',},  hidden: true, type: 'custom'},
         { id: 'Minister of the Right - The Fourth Princess', source: 'Minister of the Right', target: 'The Fourth Princess', style:{ stroke: '#40e3a7', strokeWidth: '2'},data:{type: 'smoothstep',label: 'daughter',},  hidden: true, type: 'custom'},
         { id: 'Minister of the Right - Oborozukiyo', source: 'Minister of the Right', target: 'Oborozukiyo', style:{ stroke: '#40e3a7', strokeWidth: '2'},data:{type: 'smoothstep',label: 'daughter',}, hidden: true, type: 'custom'},
         { id: '💍 -> Murasaki no Ue', source: 'Prince Hyōbu + Murasaki\'s Mother', target: 'Murasaki no Ue', style:{ stroke: '#c603fc', strokeWidth: '2'},type: 'straight', hidden: true},
@@ -251,12 +251,12 @@ var relationships = useRef([
         { id: 'Iyo no Suke - Ki no Kami', source: 'Iyo no Suke', target: 'Ki no Kami',  style:{ stroke: '#005c0b', strokeWidth: '2'}, data:{label: 'son',type: 'smoothstep',}, hidden: true,type: 'custom'},
         { id: 'Iyo no Suke - Nokiba no Ogi', source: 'Iyo no Suke', target: 'Nokiba no Ogi', style:{ stroke: '#005c0b', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',}, hidden: true,type: 'custom'},
         { id: 'Nokiba no Ogi - Ki no Kami', source: 'Nokiba no Ogi', target: 'Ki no Kami',  style:{ stroke: '#e675de', strokeWidth: '2'}, data:{label: 'older brother',}, hidden: true,type: 'custom'},
-        { id: 'Emperor Reizei - 💍 - 3', source: 'Emperor Reizei', target: 'Emperor Reizei + Kokiden Consort II', style:{ stroke: '#fc44ad', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Kokiden Consort II - 💍', source: 'Kokiden Consort II', target: 'Emperor Reizei + Kokiden Consort II', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: '💍 -> Kokiden Consort II', source: 'Tō no Chūjō + The Fourth Princess', target: 'Kokiden Consort II', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'Emperor Reizei - 💍 - 3', source: 'Emperor Reizei', target: 'Emperor Reizei + Kokiden Consort 2', style:{ stroke: '#fc44ad', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Kokiden Consort 2 - 💍', source: 'Kokiden Consort 2', target: 'Emperor Reizei + Kokiden Consort 2', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: '💍 -> Kokiden Consort 2', source: 'Tō no Chūjō + The Fourth Princess', target: 'Kokiden Consort 2', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Genji - Akikonomu', source: 'Genji', target: 'Akikonomu',  style:{ stroke: '#e0dd22', strokeWidth: '2'}, data:{label: 'adopted daughter',}, hidden: true,type: 'custom'},
         { id: 'Momozono Shikubu no Miya - Asagao', source: 'Momozono Shikubu no Miya', target: 'Asagao', style:{ stroke: '#8f9945', strokeWidth: '2'}, data:{label: 'daughter',type: 'smoothstep',}, hidden: true,type: 'custom'},
-        { id: 'Genji - 💔', source: 'Genji', target: 'Genji + Asagao', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Genji - 💔 - 2', source: 'Genji', target: 'Genji + Asagao', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Asagao - 💔', source: 'Asagao', target: 'Genji + Asagao', style:{ stroke: '#c0ff99', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Genji - Genji\'s Horse', source: 'Genji', target: 'Genji\'s Horse',  style:{ stroke: '#e0dd22', strokeWidth: '2'}, data:{label: 'pet',}, hidden: true,type: 'custom'},
         { id: 'The Third Princess - Cat', source: 'The Third Princess', target: 'Cat', style:{ stroke: '#ff4f9e', strokeWidth: '2'}, data:{label: 'pet',}, hidden: true,type: 'custom'},
@@ -329,13 +329,6 @@ if (ch.source.includes(" + ") && !(ch.id.includes("(adopted)"))) {
 }
 relationships.current = extra_edges
 
-var node_adjust = [...characters.current]
-for (const ch of node_adjust) {
-ch.position.x *=1.05
-ch.position.y *=1.05
-}
-characters.current = node_adjust
-
 const [nodes, setNodes] =useState([...characters.current])
 const [edges, setEdges] = useState([...relationships.current])
 
@@ -368,7 +361,7 @@ const character_names = [
 ["Aoi", "葵の上（あおいのうえ）"],
 ["Yūgiri", "夕霧（ゆうぎり）"],
 ["Akashi Princess", "明石の姫君（あかしのひめぎみ）"],
-["Kokiden Consort", "弘徽殿女御【桐壺帝の妃】（こきでんのにょうご）"],
+["Kokiden Consort 1", "弘徽殿女御【桐壺帝の妃】（こきでんのにょうご）"],
 ["Emperor Suzaku", "朱雀帝（すざくてい）"],
 ["Zenbō", "前坊（ぜんぼう）"],
 ["Lady Rokujō", "六条御息所（ろくじょうのみやす）"],
@@ -400,7 +393,7 @@ const character_names = [
 ["Iyo no Suke", "伊予介（いよのすけ）"],
 ["Ki no Kami", "紀伊守（きのかみ）"],
 ["Nokiba no Ogi", "軒端荻（のきばのおぎ）"],
-["Kokiden Consort II", "弘徽殿女御【冷泉帝の妃】（こきでんのにょうご）"],
+["Kokiden Consort 2", "弘徽殿女御【冷泉帝の妃】（こきでんのにょうご）"],
 ["Asagao", "朝顔（あさがお）"],
 ["Genji's Horse", "光源氏の馬🐎（ひかるげんじのうま）"],
 ["Cat", "猫🐈（ねこ）"],
@@ -427,6 +420,101 @@ const character_names = [
 ["Bishop of Yokawa", "横川の僧都（よかわのそうづ）"],
 ["Chūjō no Kimi", "中将の君（ちゅうじょうのきみ）"]
 ]
+const showedAll = useRef(false)
+
+//all relationships of that character  
+const allRel = (num) => {
+var new_nodes = [...nodes]
+var new_edges = [...edges]
+
+//disable all first after showAll
+if (showedAll.current) {
+        for (const ch of new_nodes) {
+                ch.hidden = true
+        }
+        for (const ch of new_edges) {
+                ch.hidden = true
+        }
+        showedAll.current = false
+}
+
+for (const e1 of new_edges) {
+        if (e1.source.includes(" + ")) {
+                const people1 = e1.source.slice(0, e1.source.indexOf(" + "))
+                const people2 = e1.source.slice(e1.source.indexOf(" + ")+3)
+                const offspring = e1.target
+                const linkage = e1.source
+                if (people1 == characters.current[num].id || people2 == characters.current[num].id) {
+                        for (const n1 of new_nodes) {
+                                if (n1.id == offspring || n1.id == linkage || n1.id == people1 || n1.id == people2) {
+                                        n1.hidden = false
+                                }
+                        }
+                        e1.hidden = false
+                        e1.animated = true
+                } else if (offspring == characters.current[num].id) {
+                        for (const n1 of new_nodes) {
+                                if (n1.id == people1 || n1.id == people2 || n1.id == linkage) {
+                                        n1.hidden = false
+                                }
+                        }
+                        for (const e2 of new_edges) {
+                                if ((e2.source == people1 || e2.source == people2) && e2.target == linkage) {
+                                        e2.hidden = false
+                                        e2.animated = true
+                                }
+                        }
+                        e1.hidden = false
+                        e1.animated = true
+                } 
+        } else if (e1.source == characters.current[num].id || e1.target == characters.current[num].id) {
+                for (const n1 of new_nodes) {
+                        if (n1.id == e1.source || n1.id == e1.target) {
+                                n1.hidden = false
+                        }
+                }
+                e1.hidden = false
+                e1.animated = true
+        }
+        if (e1.label == "parent") {
+                e1.hidden = true
+        }
+}
+
+for (const n1 of new_nodes) {
+        if (n1.id.includes(" + ") && n1.id.includes(characters.current[num].id)) {
+                const people1 = n1.id.slice(0, n1.id.indexOf(" + "))
+                const people2 = n1.id.slice(n1.id.indexOf(" + ")+3)
+                const linkage = n1.id
+                for (const n2 of new_nodes) {
+                        if (n2.id == people1 || n2.id == people2) {
+                                n2.hidden = false
+                        }
+                }
+                for (const e1 of new_edges) {
+                        if (e1.target == linkage) {
+                                e1.hidden = false
+                                e1.animated = true
+                        } 
+                        if (e1.label == "parent") {
+                                e1.hidden = true
+                        }
+                }
+        }
+}
+
+//check and uncheckboxes
+for (let i = 0; i < character_names.length; i++) {
+        if (new_nodes[i].hidden == false) {
+                document.getElementById("ch" + i.toString()).checked = true
+        } else {
+                document.getElementById("ch" + i.toString()).checked = false
+        }
+}
+
+setNodes(new_nodes)
+setEdges(new_edges)
+}
 
 const enableDisable = (num, bool) => {
 var new_nodes = [...nodes]
@@ -527,6 +615,7 @@ setEdges(new_edges)
 }
 
 const showAll = () => {
+showedAll.current = true
 var new_nodes = [...nodes]
 var new_edges = [...edges]
 for (let i = 0; i < character_names.length; i++) {
@@ -547,6 +636,7 @@ setEdges(new_edges)
 }
 
 const disableAll = () => {
+showedAll.current = false
 var new_nodes = [...nodes]
 var new_edges = [...edges]
 for (let i = 0; i < character_names.length; i++) {
@@ -579,9 +669,27 @@ for (let i = 0; i < character_names.length; i++) {
 }
 }
 
-function myFunction(hi) {
-// Declare variables
-var filter = hi.toUpperCase()
+const enableFlow = () => {
+var new_edges = [...edges]
+for (const e1 of new_edges) {
+        e1.animated = true
+}
+setEdges(new_edges)
+}
+
+const disableFlow = () => {
+var new_edges = [...edges]
+for (const e1 of new_edges) {
+        if (e1.label != 'parent') {
+                e1.animated = false
+        }
+}
+setEdges(new_edges)
+}
+
+function myFunction(query) {
+// Declare variables 
+var filter = query.toUpperCase()
 var li = document.getElementsByTagName("li")
 
 // Loop through all list items, and hide those who don't match the search query
@@ -595,23 +703,60 @@ for (var i = 0; i < li.length; i++) {
 }
 }
 
+//expand | shrink
+const expand_counter = useRef(null);
+
+function expand_start() {
+expand_counter.current = setInterval(function() {
+        var new_nodes = [...nodes]
+        for (const n1 of new_nodes) {
+                n1.position.x *= 1.01
+                n1.position.y *= 1.01
+        }
+        setNodes(new_nodes)
+}, 50);
+}
+function expand_end() {
+clearInterval(expand_counter.current)
+}
+
+const shrink_counter = useRef(null);
+
+function shrink_start() {
+shrink_counter.current = setInterval(function() {
+        var new_nodes = [...nodes]
+        for (const n1 of new_nodes) {
+                n1.position.x *= 0.99
+                n1.position.y *= 0.99
+        }
+        setNodes(new_nodes)
+}, 50);
+}
+function shrink_end() {
+clearInterval(shrink_counter.current)
+}
+
 return (
-<div style={{fontSize: "large", position: "absolute", top: 0, right: 0, bottom: 0, left: 0, height: "50vh"}}>
+<div style={{fontSize: "large", position: "absolute", top: 0, right: 0, bottom: 0, left: 0, height: "45vh"}}>
 <br></br>
 <div >
-<button onClick={() => showAll()} style={{fontSize: "large"}}>Show All</button>
-                <button onClick={() => disableAll()} style={{fontSize: "large"}}>Disable All</button>
-                <select onChange={(e) => changeLanguage(e.target.value)} style={{marginLeft: "10px", fontSize: "large", width: "175px"}}>
+<button onClick={() => showAll()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', fontWeight: 'bold'}}>Show All</button>
+                <button onClick={() => disableAll()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', fontWeight: 'bold'}}>Disable All</button>
+                <button onClick={() => enableFlow()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', borderRadius: '10px'}}>Enable Flow</button>
+                <button onClick={() => disableFlow()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', borderRadius: '10px'}}>Disable Flow</button>
+                <select onChange={(e) => changeLanguage(e.target.value)} style={{marginLeft: "10px", fontSize: "large", width: "175px", marginRight: "10px",}}>
   <option value="en" selected>English</option>
   <option value="jp" >Japanese</option>
 </select>
 </div>
         <br></br>
-        <button id="disableMenuButton" style={{borderRadius: "50%", margin: '4px', visibility: 'hidden'}} title="disable menu" onClick={() => {document.getElementById('myMenu').style.display = 'none'; document.getElementById('disableMenuButton').style.visibility = 'hidden'}}>✖</button>
+        <button id="disableMenuButton" style={{borderRadius: "50%", margin: '4px', visibility: 'hidden'}} title="disable menu" onClick={() => {document.getElementById('myMenu').style.display = 'none'; document.getElementById('disableMenuButton').style.visibility = 'hidden'; document.getElementById('mySearch').value = ""}}>✖</button>
         <input type="text" id="mySearch" onKeyUp={(e) => myFunction(e.target.value)} title="Type in a category" onSelectCapture={() => {document.getElementById('myMenu').style.display = 'block';  document.getElementById('disableMenuButton').style.visibility = 'visible'}} style={{width: "175px", fontSize: "13px", padding: "11px", border: "1px solid #ddd", marginBottom: '10px'}}/>
-        <div style={{position: 'relative', height:0, width: 0, }}>
+        <button onMouseDown={() => shrink_start()} onMouseUp={() => shrink_end()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', borderRadius: '10px'}}>❇️</button>
+        <button onMouseDown={() => expand_start()} onMouseUp={() => expand_end()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', borderRadius: '10px'}}>✳️</button>
+        <div style={{position: 'relative', height:0, width: 0, marginLeft:'35px'}}>
                 <div style={{position: 'absolute', height:'0px', width: '320px', zIndex: 1,}}>
-                        <ul id="myMenu" style={{listStyle: "none inside", margin: 0,width: 'fit-content',  height: '225px', overflowY: 'scroll', display: 'none', scrollbarWidth: 'none', background: 'white', marginLeft: 0, paddingLeft:0}} >
+                        <ul id="myMenu" style={{listStyle: "none inside", margin: 0,width: 'fit-content',  height: 'fit-cotent', maxHeight: '225px', overflowY: 'scroll', display: 'none', scrollbarWidth: 'none', background: 'white', marginLeft: 0, paddingLeft:0}} >
                         {
                                 character_names.map(
                                         function(names, i) {
@@ -621,7 +766,7 @@ return (
                                                                         <option value={names[0]} selected>{names[0]}</option>
                                                                         <option value={names[1].slice(0, names[1].indexOf("（"))}>{names[1]}</option>
                                                                 </select>
-                                                                <button id={"display_all_rels_"+i.toString()} style={{borderRadius: "50%", margin: '4px'}} title={"display all relationships for " + names[0]} onClick={() => {}}>All</button>
+                                                                <button id={"display_all_rels_"+i.toString()} style={{borderRadius: "95%", margin: '4px', background: '#bdbdbd'}} title={"display all relationships for " + names[0]} onClick={() => {allRel(i)}}>📌</button>
                                                         </div></li>
                                         }
                                 )
