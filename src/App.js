@@ -13,14 +13,14 @@ import styles from './characters.module.css';
 import CustomEdge from "./CustomEdge.tsx";
 
 function App() {
-  //characters
-  var characters = useRef([
+//characters
+var characters = useRef([  
         { id: 'Previous Emperor', position: { x: 0, y: -350 }, data: { label: 'Previous Emperor' }, draggable: true, style: {border: '2px solid #2c3e78'}, hidden: true},
         { id: 'Kiritsubo Emperor', position: { x: -100, y: -25 }, data: { label: 'Kiritsubo Emperor' }, draggable: true, style: {border: '2px solid #782c4b'}, hidden: true},
         { id: 'Kiritsubo Consort', position: { x: -300, y: 90 }, data: { label: 'Kiritsubo Consort' }, draggable: true, style: {border: '2px solid #1e5e3b'}, hidden: true},
-        { id: 'Azechi', position: { x: -300, y: 0 }, data: { label: 'Azechi' }, draggable: true, style: {border: '2px solid #7d6227'}, hidden: true},
+        { id: 'Azechi no Dainagon 1', position: { x: -300, y: 0 }, data: { label: 'Azechi no Dainagon I' }, draggable: true, style: {border: '2px solid #7d6227'}, hidden: true},
         { id: 'Princess Omiya', position: { x: 175, y: -125 }, data: { label: 'Princess Omiya' }, draggable: true, style: {border: '2px solid #91ab80'}, hidden: true},
-        { id: 'Momozono Shikubu no Miya', position: {x: -215, y: -175 }, data: { label: 'Momozono Shikubu no Miya' }, draggable: true, style: {border: '2px solid #8f9945'}, hidden: true},
+        { id: 'Momozono Shikubu no Miya', position: {x: -215, y: -205 }, data: { label: 'Momozono Shikubu no Miya' }, draggable: true, style: {border: '2px solid #8f9945'}, hidden: true},
         { id: 'Fujitsubo', position: { x: 62, y: 100 }, data: { label: 'Fujitsubo' }, draggable: true, style: {border: '2px solid #c47a2f'}, hidden: true},
         { id: 'Genji', position: { x: -213, y: 168 }, data: { label: 'Genji' }, draggable: true, style: {border: '2px solid #e0dd22'}, hidden: true},
         { id: 'Prince Hyōbu', position: { x: 280, y: 95 }, data: { label: 'Prince Hyōbu' }, draggable: true, style: {border: '2px solid #5f9945'}, hidden: true},
@@ -34,17 +34,17 @@ function App() {
         { id: 'Aoi', position: { x: 230, y: 205 }, data: { label: 'Aoi' }, draggable: true, style: {border: '2px solid #00c8fa'}, hidden: true},
         { id: 'Yūgiri', position: {x: -130, y: 425 }, data: { label: 'Yūgiri' }, draggable: true, style: {border: '2px solid #578fff'}, hidden: true},
         { id: 'Akashi Princess', position: { x: -300, y: 290  }, data: { label: 'Akashi Princess' }, draggable: true, style: {border: '2px solid #7cdb53'}, hidden: true},
-        { id: 'Kokiden Consort 1', position: { x: -630, y: 85 }, data: { label: 'Kokiden Consort 1' }, draggable: true, style: {border: '2px solid #db537c'}, hidden: true},
-        { id: 'Emperor Suzaku', position: { x: -550, y: 168  }, data: { label: 'Emperor Suzaku' }, draggable: true, style: {border: '2px solid #d98e04'}, hidden: true},
+        { id: 'Kokiden Consort 1', position: { x: -630, y: 85 }, data: { label: 'Kokiden Consort I' }, draggable: true, style: {border: '2px solid #db537c'}, hidden: true},
+        { id: 'Emperor Suzaku', position: { x: -740, y: 168  }, data: { label: 'Emperor Suzaku' }, draggable: true, style: {border: '2px solid #d98e04'}, hidden: true},
         { id: 'Zenbō', position: {x: -385, y: -200 }, data: { label: 'Zenbō' }, draggable: true, style: {border: '2px solid #82708c'}, hidden: true},
         { id: 'Lady Rokujō', position: {x: -647.734, y: -241.997 }, data: { label: 'Lady Rokujō' }, draggable: true, style: {border: '2px solid #fc1717'}, hidden: true},
-        { id: 'Tō no Chūjō', position: { x: 445, y: 95 }, data: { label: 'Tō no Chūjō' }, draggable: true, style: {border: '2px solid #5300c7'}, hidden: true},
+        { id: 'To no Chujo', position: { x: 445, y: 95 }, data: { label: 'Tō no Chūjō' }, draggable: true, style: {border: '2px solid #5300c7'}, hidden: true},
         { id: 'Yūgao', position: { x: 230, y: 300 }, data: { label: 'Yūgao' }, draggable: true, style: {border: '2px solid #f56ee5'}, hidden: true},
         { id: 'Tamakazura', position: { x: 345, y:  522 }, data: { label: 'Tamakazura' }, draggable: true, style: {border: '2px solid #d64f6c'}, hidden: true},
-        { id: 'The Fourth Princess', position: {x: 625, y: 205 }, data: { label: 'The Fourth Princess' }, draggable: true, style: {border: '2px solid #c2de6d'}, hidden: true},
+        { id: 'The Fourth Princess 1', position: {x: 625, y: 205 }, data: { label: 'The Fourth Princess I' }, draggable: true, style: {border: '2px solid #c2de6d'}, hidden: true},
         { id: 'Minister of the Right', position: { x: 655, y: -285 }, data: { label: 'Minister of the Right' }, draggable: true, style: {border: '2px solid #40e3a7'}, hidden: true},
-        { id: 'Oborozukiyo', position: { x: -725, y: 168  }, data: { label: 'Oborozukiyo' }, draggable: true, style: {border: '2px solid #b5d468'}, hidden: true},
-        { id: 'Kumoi no Kari\'s Mother', position: { x: 612, y: 95 }, data: { label: 'Kumoi no Kari\'s Mother' }, draggable: true, style: {border: '2px solid #756f56'}, hidden: true},
+        { id: 'Oborozukiyo', position: { x: -917, y: 168  }, data: { label: 'Oborozukiyo' }, draggable: true, style: {border: '2px solid #b5d468'}, hidden: true},
+        { id: 'Kumoinokari\'s Mother', position: { x: 612, y: 95 }, data: { label: 'Kumoi no Kari\'s Mother' }, draggable: true, style: {border: '2px solid #756f56'}, hidden: true},
         { id: 'Murasaki\'s Mother', position: { x: 400, y: 205 }, data: { label: 'Murasaki\'s Mother' }, draggable: true, style: {border: '2px solid #92ba61'}, hidden: true},
         { id: 'Kitayama no Amagimi', position: { x: 550, y: -125 }, data: { label: 'Kitayama no Amagimi' }, draggable: true, style: {border: '2px solid #c2af91'}, hidden: true},
         { id: 'The Lady of Jokyoden Palace', position: { x: -500, y: 290 }, data: { label: 'The Lady of Jokyoden Palace' }, draggable: true, style: {border: '2px solid #1f4f28'}, hidden: true},
@@ -58,7 +58,7 @@ function App() {
         { id: 'Kashiwagi', position: { x: 217, y: 465 }, data: { label: 'Kashiwagi' }, draggable: true, style: {border: '2px solid #b2fc72'}, hidden: true},
         { id: 'The Eighth Prince', position: { x: -685, y: 570 }, data: { label: 'The Eighth Prince' }, draggable: true, style: {border: '2px solid #54e8c0'}, hidden: true},
         { id: 'Prince Hitachi', position: { x: -885, y: 75 }, data: { label: 'Prince Hitachi' }, draggable: true, style: {border: '2px solid #879c62'}, hidden: true},
-        { id: 'Suetsumuhana', position: { x: -885, y: 168 }, data: { label: 'Suetsumuhana' }, draggable: true, style: {border: '2px solid #d1884f'}, hidden: true},
+        { id: 'Suetsumuhana', position: { x: -1171, y: 168 }, data: { label: 'Suetsumuhana' }, draggable: true, style: {border: '2px solid #d1884f'}, hidden: true},
         { id: 'Reikeiden Consort', position: { x: 62, y: 0 }, data: { label: 'Reikeiden Consort' }, draggable: true, style: {border: '2px solid #95dadb'}, hidden: true},
         { id: 'The Lady of the Falling Flowers', position: { x: 285, y: 0 }, data: { label: 'The Lady of the Falling Flowers' }, draggable: true, style: {border: '2px solid #4b65db'}, hidden: true},
         { id: 'Kogimi', position: { x: -770, y: 315 }, data: { label: 'Kogimi' }, draggable: true, style: {border: '2px solid #5abaed'}, hidden: true},
@@ -66,7 +66,7 @@ function App() {
         { id: 'Iyo no Suke', position: { x: -1075, y: 422 }, data: { label: 'Iyo no Suke' }, draggable: true, style: {border: '2px solid #005c0b'}, hidden: true},
         { id: 'Ki no Kami', position: { x: -1109, y: 608 }, data: { label: 'Ki no Kami' }, draggable: true, style: {border: '2px solid #80231b'}, hidden: true},
         { id: 'Nokiba no Ogi', position: { x: -836, y: 558 }, data: { label: 'Nokiba no Ogi' }, draggable: true, style: {border: '2px solid #e675de'}, hidden: true},
-        { id: 'Kokiden Consort 2', position: { x: 505, y: 370 }, data: { label: 'Kokiden Consort 2' }, draggable: true, style: {border: '2px solid #0ee39f'}, hidden: true},
+        { id: 'Kokiden Consort 2', position: { x: 505, y: 370 }, data: { label: 'Kokiden Consort II' }, draggable: true, style: {border: '2px solid #0ee39f'}, hidden: true},
         { id: 'Asagao', position: { x: -708, y: -96 }, data: { label: 'Asagao' }, draggable: true, style: {border: '2px solid #c0ff99'}, hidden: true},
         { id: 'Genji\'s Horse', position: { x: -1000, y: 350 }, data: { label: 'Genji\'s Horse' }, draggable: true, style: {border: '2px solid #b4d68b'}, hidden: true},
         { id: 'Cat', position: { x: -10, y: 685 }, data: { label: 'Cat' }, draggable: true, style: {border: '2px solid #c98a00'}, hidden: true},
@@ -92,6 +92,21 @@ function App() {
         { id: 'Gen no Naishi', position: { x: -705, y: 445 }, data: { label: 'Gen no Naishi' }, draggable: true, style: {border: '2px solid #8d9181'}, hidden: true},
         { id: 'Bishop of Yokawa', position: { x: -475, y: 933 }, data: { label: 'Bishop of Yokawa' }, draggable: true, style: {border: '2px solid #dbb98a'}, hidden: true},
         { id: 'Chūjō no Kimi', position: { x: -575, y: 640 }, data: { label: 'Chūjō no Kimi' }, draggable: true, style: {border: '2px solid #36188f'}, hidden: true},
+        
+        { id: 'The Fourth Princess 2', position: {x: -1240, y: 410 }, data: { label: 'The Fourth Princess II' }, draggable: true, style: {border: '2px solid #a186c4'}, hidden: true},
+        { id: 'Ben no Kimi', position: {x: -960, y: 860 }, data: { label: 'Ben no Kimi' }, draggable: true, style: {border: '2px solid #8f6e0a'}, hidden: true},
+        { id: 'Kurōdo no Shōshō', position: {x: 256, y: 760 }, data: { label: 'Kurōdo no Shōshō' }, draggable: true, style: {border: '2px solid #5b6660'}, hidden: true},
+        { id: 'Himegimi', position: {x: 430, y: 760 }, data: { label: 'Himegimi' }, draggable: true, style: {border: '2px solid #b34f8c'}, hidden: true},
+        { id: 'Chūnagon', position: {x: -1325, y: 325 }, data: { label: 'Chūnagon' }, draggable: true, style: {border: '2px solid #6b754d'}, hidden: true},
+        { id: 'Jijū', position: {x: -1330, y: 260 }, data: { label: 'Jijū' }, draggable: true, style: {border: '2px solid #715dc2'}, hidden: true},
+        { id: 'The Bishop of Kitayama', position: {x: 800, y: -125 }, data: { label: 'The Bishop of Kitayama' }, draggable: true, style: {border: '2px solid #4f30c9'}, hidden: true},
+        { id: 'Azechi no Kimi', position: {x: -385, y: 982 }, data: { label: 'Azechi no Kimi' }, draggable: true, style: {border: '2px solid #768bad'}, hidden: true},
+        { id: 'Azechi no Dainagon 2', position: { x: 430, y: -210 }, data: { label: 'Azechi no Dainagon II' }, draggable: true, style: {border: '2px solid #644e6e'}, hidden: true},
+        { id: 'Azechi no Dainagon 3', position: { x: 785, y: 95 }, data: { label: 'Azechi no Dainagon III' }, draggable: true, style: {border: '2px solid #498258'}, hidden: true},
+        { id: 'The Holy Man of Kitayama', position: { x: 968, y: -100 }, data: { label: 'The Holy Man of Kitayama' }, draggable: true, style: {border: '2px solid #dedda2'}, hidden: true},
+        { id: 'Naishi no Kimi', position: { x: 595, y: 760 }, data: { label: 'Naishi no Kimi' }, draggable: true, style: {border: '2px solid #d17d77'}, hidden: true},
+
+        //"relationship" linkages 
         { id: 'Kiritsubo Consort + Kiritsubo Emperor', position: { x: -83, y: 111 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Kiritsubo Emperor + Fujitsubo', position: { x: -25, y: 111 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Murasaki no Ue', position: { x: 60, y: 325 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
@@ -103,14 +118,14 @@ function App() {
         { id: 'Kiritsubo Emperor + Kokiden Consort 1', position: { x: -360, y: 80 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Lady Rokujō', position: { x: -300, y: -69 }, data: { label: '💔' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Yūgao', position: { x: 185, y: 313 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Tō no Chūjō + Yūgao', position: { x: 350, y: 375 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'To no Chujo + Yūgao', position: { x: 350, y: 375 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Prince Hyōbu + Murasaki\'s Mother', position: { x: 364, y: 190 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Emperor Suzaku + Oborozukiyo', position: { x: -585, y: 250 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Oborozukiyo', position: { x: -355, y: 310 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Emperor Suzaku + The Lady of Jokyoden Palace', position: { x: -480, y: 250 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Zenbō + Lady Rokujō', position: { x: -513, y: -167 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Tō no Chūjō + Kumoi no Kari\'s Mother', position: {x: 550, y: 200 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Tō no Chūjō + The Fourth Princess', position: {x: 580, y: 326 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'To no Chujo + Kumoinokari\'s Mother', position: {x: 550, y: 200 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'To no Chujo + The Fourth Princess 1', position: {x: 580, y: 326 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Akikonomu + Emperor Reizei', position: {x:-265, y: 535 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'The Third Princess + Kashiwagi', position: { x: -80, y: 715 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Suetsumuhana', position: { x: -770, y: 270 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
@@ -118,7 +133,7 @@ function App() {
         { id: 'Genji + The Lady of the Falling Flowers', position: { x: 225, y: 70 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + The Third Princess', position: { x: -180, y: 695}, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Akashi Princess + Emperor Reizei', position: {x:-190, y: 475 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Genji + Kogimi', position: { x: -665, y: 395 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Genji + Kogimi', position: { x: -538, y: 363 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Utsusemi', position: { x: -750, y: 485 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Iyo no Suke + Utsusemi', position: { x: -940, y: 520 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Emperor Reizei + Kokiden Consort 2', position: { x: 187, y: 433 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
@@ -130,7 +145,7 @@ function App() {
         { id: 'Kobai + Makibashira', position: { x: 775, y: 525 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'The Second Princess + Kashiwagi', position: { x: 177, y: 635 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'The Second Princess + Yūgiri', position: { x: -50, y: 635 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-        { id: 'Kumoi no Kari + Yūgiri', position: { x: -50, y: 500 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Kumoi no Kari + Yūgiri', position: { x: -18, y: 510 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Emperor Kinjo + Akashi Princess', position: {x:-340, y: 535 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'The Eighth Prince + Eighth Prince\'s Wife', position: {x:-720, y: 750 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Niou + Ukifune', position: { x: -420, y: 800 }, data: { label: '💔' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
@@ -142,9 +157,15 @@ function App() {
         { id: 'The Akashi Lady + Yoshikiyo', position: { x: -745, y: 70 }, data: { label: '💔' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'Genji + Gen no Naishi', position: { x: -695, y: 545 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
         { id: 'The Eighth Prince + Chūjō no Kimi', position: {x: -615, y: 685 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
-])
 
-//relationships 
+        { id: 'Genji + Nokiba no Ogi', position: { x: -717, y: 635 }, data: { label: '❤️' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Emperor Reizei + Himegimi', position: { x: 366, y: 718 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Kurōdo no Shōshō + Himegimi', position: { x: 390, y: 885 }, data: { label: '💔' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Kitayama no Amagimi + Azechi no Dainagon 2', position: { x: 470, y: 25 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+        { id: 'Kumoinokari\'s Mother + Azechi no Dainagon 3', position: { x: 800, y: 250 }, data: { label: '💍' }, draggable: true, style: { height: 50, width: 50, border: 50, borderRadius: 50, marginLeft:0, background: 'transparent'}, sourcePosition: 'top', hidden: true},
+]) 
+
+//relationships 　
 var relationships = useRef([
         { id: 'Previous Emperor - Kiritsubo Emperor', source: 'Previous Emperor', target: 'Kiritsubo Emperor', style:{ stroke: '#2c3e78', strokeWidth: '2'}, data:{type: 'smoothstep', label: 'son', }, hidden: true, type: 'custom'},
         { id: 'Previous Emperor - Princess Omiya', source: 'Previous Emperor', target: 'Princess Omiya',  style:{ stroke: '#2c3e78', strokeWidth: '2'}, data:{type: 'smoothstep', label: 'daughter',}, hidden: true, type: 'custom'},
@@ -154,7 +175,7 @@ var relationships = useRef([
         { id: 'Kiritsubo Emperor - Prince Hotaru', source: 'Kiritsubo Emperor', target: 'Prince Hotaru', style:{ stroke: '#782c4b', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'son',}, hidden: true, type: 'custom'},
         { id: 'Kiritsubo Emperor - 💍 - 1', source: 'Kiritsubo Emperor', target: 'Kiritsubo Consort + Kiritsubo Emperor', style:{ stroke: '#782c4b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Kiritsubo Consort - 💍', source: 'Kiritsubo Consort', target: 'Kiritsubo Consort + Kiritsubo Emperor', style:{ stroke: '#1e5e3b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Kiritsubo Consort - Azechi', source: 'Azechi', target: 'Kiritsubo Consort', style:{ stroke: '#7d6227', strokeWidth: '2'}, data:{type: 'smoothstep', label: 'daughter',}, hidden: true, type: 'custom'},
+        { id: 'Kiritsubo Consort - Azechi no Dainagon 1', source: 'Azechi no Dainagon 1', target: 'Kiritsubo Consort', style:{ stroke: '#7d6227', strokeWidth: '2'}, data:{type: 'smoothstep', label: 'daughter',}, hidden: true, type: 'custom'},
         { id: 'Fujitsubo - 💍', source: 'Fujitsubo', target: 'Kiritsubo Emperor + Fujitsubo', style:{ stroke: '#c47a2f', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Kiritsubo Emperor - 💍 - 2', source: 'Kiritsubo Emperor', target: 'Kiritsubo Emperor + Fujitsubo', style:{ stroke: '#782c4b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: '💍 -> Genji', source: 'Kiritsubo Consort + Kiritsubo Emperor', target: 'Genji', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'straight', hidden: true},
@@ -174,7 +195,7 @@ var relationships = useRef([
         { id: 'Novitate - 💍', source: 'Novitate', target: 'Novitate + Akashi Nun', style:{ stroke: '#918d56', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Akashi Nun - 💍', source: 'Akashi Nun', target: 'Novitate + Akashi Nun', style:{ stroke: '#4e6158', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: '💍 -> The Akashi Lady', source: 'Novitate + Akashi Nun', target: 'The Akashi Lady', style:{ stroke: '#3acc1d', strokeWidth: '2'},type: 'straight', hidden: true},
-        { id: 'A Minister - Azechi', source: 'A Minister', target: 'Azechi',  style:{ stroke: '#445a69', strokeWidth: '2'}, data:{label: 'half-brother',}, hidden: true, type: 'custom'},
+        { id: 'A Minister - Azechi no Dainagon 1', source: 'A Minister', target: 'Azechi no Dainagon 1',  style:{ stroke: '#445a69', strokeWidth: '2'}, data:{label: 'half-brother',}, hidden: true, type: 'custom'},
         { id: 'Genji - 💍 - 2', source: 'Genji', target: 'Genji + The Akashi Lady', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'The Akashi Lady - 💍', source: 'The Akashi Lady', target: 'Genji + The Akashi Lady', style:{ stroke: '#3acc1d', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Princess Omiya - 💍', source: 'Princess Omiya', target: 'Princess Omiya + Minister of the Left', style:{ stroke: '#91ab80', strokeWidth: '2'},type: 'smoothstep', hidden: true},
@@ -191,19 +212,18 @@ var relationships = useRef([
         { id: '💍 -> Emperor Suzaku', source: 'Kiritsubo Emperor + Kokiden Consort 1', target: 'Emperor Suzaku', style:{ stroke: '#d98e04', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Genji - 💔 - 1', source: 'Genji', target: 'Genji + Lady Rokujō', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Lady Rokujō - 💔', source: 'Lady Rokujō', target: 'Genji + Lady Rokujō', style:{ stroke: '#fc1717', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: '💍 -> Tō no Chūjō', source: 'Princess Omiya + Minister of the Left', target: 'Tō no Chūjō', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: '💍 -> To no Chujo', source: 'Princess Omiya + Minister of the Left', target: 'To no Chujo', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Genji - ❤️ - 3', source: 'Genji', target: 'Genji + Yūgao', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Yūgao - ❤️', source: 'Yūgao', target: 'Genji + Yūgao', style:{ stroke: '#f56ee5', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Yūgao - 💍', source: 'Yūgao', target: 'Tō no Chūjō + Yūgao', style:{ stroke: '#f56ee5', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Tō no Chūjō - 💍 - 1', source: 'Tō no Chūjō', target: 'Tō no Chūjō + Yūgao', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: '💍 -> Tamakazura', source: 'Tō no Chūjō + Yūgao', target: 'Tamakazura', style:{ stroke: '#d64f6c', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'Yūgao - 💍', source: 'Yūgao', target: 'To no Chujo + Yūgao', style:{ stroke: '#f56ee5', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'To no Chujo - 💍 - 1', source: 'To no Chujo', target: 'To no Chujo + Yūgao', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: '💍 -> Tamakazura', source: 'To no Chujo + Yūgao', target: 'Tamakazura', style:{ stroke: '#d64f6c', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Minister of the Right - Kokiden Consort 1', source: 'Minister of the Right', target: 'Kokiden Consort 1', style:{ stroke: '#40e3a7', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',},  hidden: true, type: 'custom'},
-        { id: 'Minister of the Right - The Fourth Princess', source: 'Minister of the Right', target: 'The Fourth Princess', style:{ stroke: '#40e3a7', strokeWidth: '2'},data:{type: 'smoothstep',label: 'daughter',},  hidden: true, type: 'custom'},
+        { id: 'Minister of the Right - The Fourth Princess 1', source: 'Minister of the Right', target: 'The Fourth Princess 1', style:{ stroke: '#40e3a7', strokeWidth: '2'},data:{type: 'smoothstep',label: 'daughter',},  hidden: true, type: 'custom'},
         { id: 'Minister of the Right - Oborozukiyo', source: 'Minister of the Right', target: 'Oborozukiyo', style:{ stroke: '#40e3a7', strokeWidth: '2'},data:{type: 'smoothstep',label: 'daughter',}, hidden: true, type: 'custom'},
         { id: '💍 -> Murasaki no Ue', source: 'Prince Hyōbu + Murasaki\'s Mother', target: 'Murasaki no Ue', style:{ stroke: '#c603fc', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Prince Hyōbu - 💍', source: 'Prince Hyōbu', target: 'Prince Hyōbu + Murasaki\'s Mother', style:{ stroke: '#5f9945', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Murasaki\'s Mother - 💍', source: 'Murasaki\'s Mother', target: 'Prince Hyōbu + Murasaki\'s Mother', style:{ stroke: '#92ba61', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Kitayama no Amagimi - Murasaki\'s Mother', source: 'Kitayama no Amagimi', target: 'Murasaki\'s Mother', style:{ stroke: '#c2af91', strokeWidth: '2'}, data:{label: 'daughter',}, hidden: true, type: 'custom'},
         { id: 'Oborozukiyo - 💍', source: 'Oborozukiyo', target: 'Emperor Suzaku + Oborozukiyo', style:{ stroke: '#b5d468', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Emperor Suzaku - 💍 - 1', source: 'Emperor Suzaku', target: 'Emperor Suzaku + Oborozukiyo', style:{ stroke: '#d98e04', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Oborozukiyo - ❤️', source: 'Oborozukiyo', target: 'Genji + Oborozukiyo', style:{ stroke: '#b5d468', strokeWidth: '2'},type: 'smoothstep', hidden: true},
@@ -211,21 +231,21 @@ var relationships = useRef([
         { id: 'The Lady of Jokyoden Palace - 💍', source: 'The Lady of Jokyoden Palace', target: 'Emperor Suzaku + The Lady of Jokyoden Palace', style:{ stroke: '#1f4f28', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Emperor Suzaku - 💍 - 2', source: 'Emperor Suzaku', target: 'Emperor Suzaku + The Lady of Jokyoden Palace', style:{ stroke: '#d98e04', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'The Lady of Jokyoden Palace - Higekuro', source: 'The Lady of Jokyoden Palace', target: 'Higekuro', style:{ stroke: '#1f4f28', strokeWidth: '2'}, data:{label: 'full-brother',}, hidden: true, type: 'custom'},
-        { id: 'Prince Hyōbu - Higekuro\'s Wife', source: 'Prince Hyōbu', target: 'Higekuro\'s Wife', style:{ stroke: '#5f9945', strokeWidth: '2'}, data:{label: 'daughter',}, type: 'smoothstep', hidden: true, type: 'custom'},
+        { id: 'Prince Hyōbu - Higekuro\'s Wife', source: 'Prince Hyōbu', target: 'Higekuro\'s Wife', style:{ stroke: '#5f9945', strokeWidth: '2'}, data:{type: 'smoothstep', label: 'daughter'}, hidden: true, type: 'custom'},
         { id: 'Yūgao - Ukon', source: 'Yūgao', target: 'Ukon', style:{ stroke: '#496b62', strokeWidth: '2'},  type: 'smoothstep', data:{label: 'servant',}, hidden: true, type: 'custom'},
         { id: 'Lady Rokujō - 💍', source: 'Lady Rokujō', target: 'Zenbō + Lady Rokujō', style:{ stroke: '#fc1717', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Zenbō - 💍', source: 'Zenbō', target: 'Zenbō + Lady Rokujō', style:{ stroke: '#82708c', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Tō no Chūjō - 💍 - 2', source: 'Tō no Chūjō', target: 'Tō no Chūjō + The Fourth Princess', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'The Fourth Princess - 💍', source: 'The Fourth Princess', target: 'Tō no Chūjō + The Fourth Princess', style:{ stroke: '#c2de6d', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Tō no Chūjō - 💍 - 3', source: 'Tō no Chūjō', target: 'Tō no Chūjō + Kumoi no Kari\'s Mother', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Kumoi no Kari\'s Mother - 💍', source: 'Kumoi no Kari\'s Mother', target: 'Tō no Chūjō + Kumoi no Kari\'s Mother', style:{ stroke: '#756f56', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: '💍 -> Kumoi no Kari', source: 'Tō no Chūjō + Kumoi no Kari\'s Mother', target: 'Kumoi no Kari', style:{ stroke: '#4da392', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'To no Chujo - 💍 - 2', source: 'To no Chujo', target: 'To no Chujo + The Fourth Princess 1', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'The Fourth Princess 1 - 💍', source: 'The Fourth Princess 1', target: 'To no Chujo + The Fourth Princess 1', style:{ stroke: '#c2de6d', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'To no Chujo - 💍 - 3', source: 'To no Chujo', target: 'To no Chujo + Kumoinokari\'s Mother', style:{ stroke: '#5300c7', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Kumoinokari\'s Mother - 💍 - 1', source: 'Kumoinokari\'s Mother', target: 'To no Chujo + Kumoinokari\'s Mother', style:{ stroke: '#756f56', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: '💍 -> Kumoi no Kari', source: 'To no Chujo + Kumoinokari\'s Mother', target: 'Kumoi no Kari', style:{ stroke: '#4da392', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: '💍 -> Akikonomu', source: 'Zenbō + Lady Rokujō', target: 'Akikonomu', style:{ stroke: '#2e3cbf', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Akikonomu - 💍', source: 'Akikonomu', target: 'Akikonomu + Emperor Reizei', style:{ stroke: '#2e3cbf', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Emperor Reizei - 💍 - 1', source: 'Emperor Reizei', target: 'Akikonomu + Emperor Reizei', style:{ stroke: '#fc44ad', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Koremitsu - Genji', source: 'Koremitsu', target: 'Genji',  style:{ stroke: '#8002ad', strokeWidth: '2'},data:{label: 'servant',},  hidden: true, type: 'custom'},
+        { id: 'Koremitsu - Genji', source: 'Genji', target: 'Koremitsu',  style:{ stroke: '#8002ad', strokeWidth: '2'},data:{label: 'servant',},  hidden: true, type: 'custom'},
         { id: 'Emperor Suzaku - The Third Princess', source: 'Emperor Suzaku', target: 'The Third Princess',  style:{ stroke: '#d98e04', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',}, hidden: true, type: 'custom'},
-        { id: '💍 -> Kashiwagi', source: 'Tō no Chūjō + The Fourth Princess', target: 'Kashiwagi', style:{ stroke: '#b2fc72', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: '💍 -> Kashiwagi', source: 'To no Chujo + The Fourth Princess 1', target: 'Kashiwagi', style:{ stroke: '#b2fc72', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'The Third Princess - ❤️', source: 'The Third Princess', target: 'The Third Princess + Kashiwagi', style:{ stroke: '#ff4f9e', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Kashiwagi - ❤️', source: 'Kashiwagi', target: 'The Third Princess + Kashiwagi', style:{ stroke: '#b2fc72', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Emperor Suzaku - The Eighth Prince', source: 'Emperor Suzaku', target: 'The Eighth Prince', style:{ stroke: '#d98e04', strokeWidth: '2'}, data:{label: 'half-brother',}, hidden: true, type: 'custom'},
@@ -253,7 +273,7 @@ var relationships = useRef([
         { id: 'Nokiba no Ogi - Ki no Kami', source: 'Nokiba no Ogi', target: 'Ki no Kami',  style:{ stroke: '#e675de', strokeWidth: '2'}, data:{label: 'older brother',}, hidden: true,type: 'custom'},
         { id: 'Emperor Reizei - 💍 - 3', source: 'Emperor Reizei', target: 'Emperor Reizei + Kokiden Consort 2', style:{ stroke: '#fc44ad', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Kokiden Consort 2 - 💍', source: 'Kokiden Consort 2', target: 'Emperor Reizei + Kokiden Consort 2', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: '💍 -> Kokiden Consort 2', source: 'Tō no Chūjō + The Fourth Princess', target: 'Kokiden Consort 2', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: '💍 -> Kokiden Consort 2', source: 'To no Chujo + The Fourth Princess 1', target: 'Kokiden Consort 2', style:{ stroke: '#0ee39f', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Genji - Akikonomu', source: 'Genji', target: 'Akikonomu',  style:{ stroke: '#e0dd22', strokeWidth: '2'}, data:{label: 'adopted daughter',}, hidden: true,type: 'custom'},
         { id: 'Momozono Shikubu no Miya - Asagao', source: 'Momozono Shikubu no Miya', target: 'Asagao', style:{ stroke: '#8f9945', strokeWidth: '2'}, data:{label: 'daughter',type: 'smoothstep',}, hidden: true,type: 'custom'},
         { id: 'Genji - 💔 - 2', source: 'Genji', target: 'Genji + Asagao', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
@@ -270,8 +290,8 @@ var relationships = useRef([
         { id: 'Prince Hotaru - 💔', source: 'Prince Hotaru', target: 'Prince Hotaru + Tamakazura', style:{ stroke: '#c2e37b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Prince Hotaru - 💍', source: 'Prince Hotaru', target: 'Prince Hotaru + Makibashira', style:{ stroke: '#c2e37b', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Makibashira - 💍 - 1', source: 'Makibashira', target: 'Prince Hotaru + Makibashira', style:{ stroke: '#c57be3', strokeWidth: '2'},type: 'smoothstep', hidden: true},
-        { id: 'Tō no Chūjō - Ōmi Lady', source: 'Tō no Chūjō', target: 'Ōmi Lady', style:{ stroke: '#5300c7', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'lost daughter',},  hidden: true,type: 'custom'},
-        { id: '💍 -> Kobai', source: 'Tō no Chūjō + The Fourth Princess', target: 'Kobai', style:{ stroke: '#c76554', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'To no Chujo - Ōmi Lady', source: 'To no Chujo', target: 'Ōmi Lady', style:{ stroke: '#5300c7', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'lost daughter',},  hidden: true,type: 'custom'},
+        { id: '💍 -> Kobai', source: 'To no Chujo + The Fourth Princess 1', target: 'Kobai', style:{ stroke: '#c76554', strokeWidth: '2'},type: 'straight', hidden: true},
         { id: 'Makibashira - 💍 - 2', source: 'Makibashira', target: 'Kobai + Makibashira', style:{ stroke: '#c57be3', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Kobai - 💍', source: 'Kobai', target: 'Kobai + Makibashira', style:{ stroke: '#c76554', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Emperor Suzaku - The Second Princess', source: 'Emperor Suzaku', target: 'The Second Princess',  style:{ stroke: '#d98e04', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',}, hidden: true,type: 'custom'},
@@ -311,12 +331,35 @@ var relationships = useRef([
         { id: 'The Akashi Lady - 💔', source: 'The Akashi Lady', target: 'The Akashi Lady + Yoshikiyo', style:{ stroke: '#3acc1d', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Yoshikiyo - 💔', source: 'Yoshikiyo', target: 'The Akashi Lady + Yoshikiyo', style:{ stroke: '#994a12', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Murasaki no Ue - Shōnagon', source: 'Murasaki no Ue', target: 'Shōnagon', style:{ stroke: '#6ddeba', strokeWidth: '2'}, data:{label: 'wet nurse',}, hidden: true,type: 'custom'},
-        { id: 'Genji - Tō no Chūjō', source: 'Genji', target: 'Tō no Chūjō', style:{ stroke: '#e0dd22', strokeWidth: '2'}, data:{label: '👊',}, hidden: true,type: 'custom'},
+        { id: 'Genji - To no Chujo', source: 'Genji', target: 'To no Chujo', style:{ stroke: '#e0dd22', strokeWidth: '2'}, data:{label: '👊',}, hidden: true,type: 'custom'},
         { id: 'Ukifune - Bishop of Yokawa', source: 'Bishop of Yokawa', target: 'Ukifune', style:{ stroke: '#dbb98a', strokeWidth: '2'}, data:{label: 'saved by',}, hidden: true,type: 'custom'},
         { id: 'The Eighth Prince - 💍 - 2', source: 'The Eighth Prince', target: 'The Eighth Prince + Chūjō no Kimi', style:{ stroke: '#54e8c0', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: 'Chūjō no Kimi - 💍', source: 'Chūjō no Kimi', target: 'The Eighth Prince + Chūjō no Kimi', style:{ stroke: '#36188f', strokeWidth: '2'},type: 'smoothstep', hidden: true},
         { id: '💍 -> Ukifune', source: 'The Eighth Prince + Chūjō no Kimi', target: 'Ukifune', style:{ stroke: '#ff5f4a', strokeWidth: '2'},type: 'straight', hidden: true},
-])
+        { id: 'Genji - Emperor Suzaku', source: 'Genji', target: 'Emperor Suzaku', style:{ stroke: '#e0dd22', strokeWidth: '2'}, data:{label: 'half-brother',}, hidden: true,type: 'custom'},
+
+        { id: 'Emperor Suzaku - The Fourth Princess 2', source: 'Emperor Suzaku', target: 'The Fourth Princess 2',  style:{ stroke: '#d98e04', strokeWidth: '2'}, data:{type: 'smoothstep',label: 'daughter',}, hidden: true,type: 'custom'},
+        { id: 'The Eighth Prince - Ben no Kimi', source: 'The Eighth Prince', target: 'Ben no Kimi', style:{ stroke: '#8f6e0a', strokeWidth: '2'}, data:{label: 'servant',}, hidden: true, type: 'custom'}, 
+        { id: 'Genji - ❤️ - 7', source: 'Genji', target: 'Genji + Nokiba no Ogi', style:{ stroke: '#e0dd22', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Nokiba no Ogi - ❤️', source: 'Nokiba no Ogi', target: 'Genji + Nokiba no Ogi', style:{ stroke: '#e675de', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: '💍 -> Kurōdo no Shōshō', source: 'Kumoi no Kari + Yūgiri', target: 'Kurōdo no Shōshō', style:{ stroke: '#5b6660', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: '💍 -> Himegimi', source: 'Higekuro + Tamakazura', target: 'Himegimi', style:{ stroke: '#b34f8c', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'Emperor Reizei - 💍 - 4', source: 'Emperor Reizei', target: 'Emperor Reizei + Himegimi', style:{ stroke: '#fc44ad', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Himegimi - 💍', source: 'Himegimi', target: 'Emperor Reizei + Himegimi', style:{ stroke: '#b34f8c', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Kurōdo no Shōshō - 💔', source: 'Kurōdo no Shōshō', target: 'Kurōdo no Shōshō + Himegimi', style:{ stroke: '#5b6660', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Himegimi - 💔', source: 'Himegimi', target: 'Kurōdo no Shōshō + Himegimi', style:{ stroke: '#b34f8c', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Oborozukiyo - Chūnagon', source: 'Oborozukiyo', target: 'Chūnagon', style:{ stroke: '#6b754d', strokeWidth: '2'}, data:{label: 'servant',}, hidden: true, type: 'custom'}, 
+        { id: 'Suetsumuhana - Jijū', source: 'Suetsumuhana', target: 'Jijū', style:{ stroke: '#715dc2', strokeWidth: '2'}, data:{label: 'servant',}, hidden: true, type: 'custom'}, 
+        { id: 'Kitayama no Amagimi - The Bishop of Kitayama', source: 'Kitayama no Amagimi', target: 'The Bishop of Kitayama', style:{ stroke: '#c2af91', strokeWidth: '2'}, data:{label: 'older brother'}, hidden: true, type: 'custom'},  
+        { id: 'The Third Princess - Azechi no Kimi', source: 'The Third Princess', target: 'Azechi no Kimi', style:{ stroke: '#768bad', strokeWidth: '2'}, data:{label: 'servant'}, hidden: true, type: 'custom'},   
+        { id: 'Azechi no Dainagon 2 - 💍', source: 'Azechi no Dainagon 2', target: 'Kitayama no Amagimi + Azechi no Dainagon 2', style:{ stroke: '#644e6e', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Kitayama no Amagimi - 💍', source: 'Kitayama no Amagimi', target: 'Kitayama no Amagimi + Azechi no Dainagon 2', style:{ stroke: '#c2af91', strokeWidth: '2'},type: 'smoothstep', hidden: true},  
+        { id: '💍 -> Murasaki\'s Mother', source: 'Kitayama no Amagimi + Azechi no Dainagon 2', target: 'Murasaki\'s Mother', style:{ stroke: '#92ba61', strokeWidth: '2'},type: 'straight', hidden: true},
+        { id: 'Kumoinokari\'s Mother - 💍 - 2', source: 'Kumoinokari\'s Mother', target: 'Kumoinokari\'s Mother + Azechi no Dainagon 3', style:{ stroke: '#756f56', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'Azechi no Dainagon 3 - 💍', source: 'Azechi no Dainagon 3', target: 'Kumoinokari\'s Mother + Azechi no Dainagon 3', style:{ stroke: '#498258', strokeWidth: '2'},type: 'smoothstep', hidden: true},
+        { id: 'The Holy Man of Kitayama - Genji', source: 'The Holy Man of Kitayama', target: 'Genji', style:{ stroke: '#dedda2', strokeWidth: '2'}, data:{label: 'visitor'}, hidden: true, type: 'custom'}, 
+        { id: '💍 -> Naishi no Kimi', source: 'Higekuro + Tamakazura', target: 'Naishi no Kimi', style:{ stroke: '#d17d77', strokeWidth: '2'},type: 'straight', hidden: true},
+])       
 
 var extra_edges = [...relationships.current]
 for (const ch of extra_edges) {
@@ -340,12 +383,12 @@ height: 120,
 const onNodesChange = useCallback( (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),[] );
 const onEdgesChange = useCallback( (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),[] );
 
-//Note: different names for each character in different translations
+//Note: different names for each character in different translations  
 const character_names = [
 ["Previous Emperor", "先皇 （せんてい）"],
 ["Kiritsubo Emperor", "桐壺帝（きりつぼてい）"],
 ["Kiritsubo Consort", "桐壺更衣（きりつぼのこうい）"],
-["Azechi", "按察使（あぜち）"],
+["Azechi no Dainagon I", "按察使の大納言（あぜちのだいなごん）"],
 ["Princess Omiya", "大宮（おおみや）"],
 ["Momozono Shikubu no Miya", "桃園式部卿宮（ももぞのしきぶきょうのみや）"],
 ["Fujitsubo", "藤壺（ふじつぼ）"],
@@ -361,14 +404,14 @@ const character_names = [
 ["Aoi", "葵の上（あおいのうえ）"],
 ["Yūgiri", "夕霧（ゆうぎり）"],
 ["Akashi Princess", "明石の姫君（あかしのひめぎみ）"],
-["Kokiden Consort 1", "弘徽殿女御【桐壺帝の妃】（こきでんのにょうご）"],
+["Kokiden Consort I", "弘徽殿女御【桐壺帝の妃】（こきでんのにょうご）"],
 ["Emperor Suzaku", "朱雀帝（すざくてい）"],
 ["Zenbō", "前坊（ぜんぼう）"],
 ["Lady Rokujō", "六条御息所（ろくじょうのみやす）"],
 ["Tō no Chūjō", "頭中将（とうのちゅうじょう）"],
 ["Yūgao", "夕顔（ゆうがお）"],
 ["Tamakazura", "玉鬘（たまかずら）"],
-["The Fourth Princess", "四の君（よんのきみ）"],
+["The Fourth Princess I", "四の君（よんのきみ）"],
 ["Minister of the Right", "右大臣（うだいじん）"],
 ["Oborozukiyo", "朧月夜（おぼろづきよ）"],
 ["Kumoi no Kari's Mother", "雲居の雁の母（くもいのかりのはは）"],
@@ -393,7 +436,7 @@ const character_names = [
 ["Iyo no Suke", "伊予介（いよのすけ）"],
 ["Ki no Kami", "紀伊守（きのかみ）"],
 ["Nokiba no Ogi", "軒端荻（のきばのおぎ）"],
-["Kokiden Consort 2", "弘徽殿女御【冷泉帝の妃】（こきでんのにょうご）"],
+["Kokiden Consort II", "弘徽殿女御【冷泉帝の妃】（こきでんのにょうご）"],
 ["Asagao", "朝顔（あさがお）"],
 ["Genji's Horse", "光源氏の馬🐎（ひかるげんじのうま）"],
 ["Cat", "猫🐈（ねこ）"],
@@ -418,7 +461,20 @@ const character_names = [
 ["Shōnagon", "少納言（しょうなごん）"],
 ["Gen no Naishi", "源典侍（げんのないしのすけ）"],
 ["Bishop of Yokawa", "横川の僧都（よかわのそうづ）"],
-["Chūjō no Kimi", "中将の君（ちゅうじょうのきみ）"]
+["Chūjō no Kimi", "中将の君（ちゅうじょうのきみ）"],
+
+["The Fourth Princess II", "女四の宮（おんなしのみや）"],
+["Ben no Kimi", "弁の君（べんのきみ）"],
+["Kurōdo no Shōshō", "蔵人の少将（くろうどのしょうしょう）"],
+["Himegimi", "姫君（ひめぎみ）"],
+["Chūnagon", "中納言の君（ちゅうなごんのきみ）"],
+["Jijū", "侍従（じじゅう）"],
+["The Bishop of Kitayama", "北山の僧都（きたやまのそうず）"], 
+["Azechi no Kimi", "按察使の君（あぜちのきみ)"] ,
+["Azechi no Dainagon II", "按察使の大納言（あぜちのだいなごん）"],
+["Azechi no Dainagon III", "按察使の大納言（あぜちのだいなごん）"],
+["The Holy Man of Kitayama", "北山の聖（きたやまのひじり）"], 
+["Naishi no Kimi", "尚侍の君（ないしのきみ）"],  
 ]
 const showedAll = useRef(false)
 
@@ -427,15 +483,18 @@ const allRel = (num) => {
 var new_nodes = [...nodes]
 var new_edges = [...edges]
 
-//disable all first after showAll
+//disable all first after showAll (else just disable animated)  
+for (const ch of new_edges) {
+        if (showedAll.current) {
+                ch.hidden = true
+        }
+        ch.animated = false
+}
 if (showedAll.current) {
+        showedAll.current = false
         for (const ch of new_nodes) {
                 ch.hidden = true
         }
-        for (const ch of new_edges) {
-                ch.hidden = true
-        }
-        showedAll.current = false
 }
 
 for (const e1 of new_edges) {
@@ -463,6 +522,15 @@ for (const e1 of new_edges) {
                                         e2.hidden = false
                                         e2.animated = true
                                 }
+                                if (e2.source == e1.source && e2.target != characters.current[num].id) { //sibling or adopted sibling 
+                                        const sibling = e2.target 
+                                        for (const n2 of new_nodes) {
+                                                if (n2.id == sibling) { 
+                                                        n2.hidden = false 
+                                                        break
+                                                }
+                                        }
+                                } 
                         }
                         e1.hidden = false
                         e1.animated = true
@@ -502,6 +570,44 @@ for (const n1 of new_nodes) {
                 }
         }
 }
+
+//other linkages (additional info)
+for (const n1 of new_nodes) {
+        if (n1.id.includes(" + ")) {
+                const people1 = n1.id.slice(0, n1.id.indexOf(" + "))
+                const people2 = n1.id.slice(n1.id.indexOf(" + ")+3)
+                const linkage = n1.id
+                for (const n2 of new_nodes) {
+                        if (n2.id == people1 && !n2.hidden) {
+                                for (const n3 of new_nodes) {
+                                        if (n3.id == people2 && !n3.hidden) {
+                                                n1.hidden = false
+                                                break
+                                        }
+                                }
+                                break
+                        }
+                }
+        }
+}
+
+//other edges (additional info)
+for (const e1 of new_edges) {
+        if (e1.hidden && e1.label != 'parent') {
+                for (const n1 of new_nodes) {
+                        if (!n1.hidden && e1.source == n1.id) {
+                                for (const n2 of new_nodes) {
+                                        if (!n2.hidden && e1.target == n2.id) {
+                                                e1.hidden = false
+                                                break
+                                        }
+                                }
+                                break
+                        }
+                }
+        }
+}
+
 
 //check and uncheckboxes
 for (let i = 0; i < character_names.length; i++) {
@@ -738,7 +844,7 @@ clearInterval(shrink_counter.current)
 
 return (
 <div style={{fontSize: "large", position: "absolute", top: 0, right: 0, bottom: 0, left: 0, height: "45vh"}}>
-<br></br>
+<br></br> 
 <div >
 <button onClick={() => showAll()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', fontWeight: 'bold'}}>Show All</button>
                 <button onClick={() => disableAll()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', fontWeight: 'bold'}}>Disable All</button>
@@ -748,13 +854,13 @@ return (
   <option value="en" selected>English</option>
   <option value="jp" >Japanese</option>
 </select>
-</div>
+</div> 
         <br></br>
         <button id="disableMenuButton" style={{borderRadius: "50%", margin: '4px', visibility: 'hidden'}} title="disable menu" onClick={() => {document.getElementById('myMenu').style.display = 'none'; document.getElementById('disableMenuButton').style.visibility = 'hidden'; document.getElementById('mySearch').value = ""}}>✖</button>
         <input type="text" id="mySearch" onKeyUp={(e) => myFunction(e.target.value)} title="Type in a category" onSelectCapture={() => {document.getElementById('myMenu').style.display = 'block';  document.getElementById('disableMenuButton').style.visibility = 'visible'}} style={{width: "175px", fontSize: "13px", padding: "11px", border: "1px solid #ddd", marginBottom: '10px'}}/>
         <button onMouseDown={() => shrink_start()} onMouseUp={() => shrink_end()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', borderRadius: '10px'}}>❇️</button>
         <button onMouseDown={() => expand_start()} onMouseUp={() => expand_end()} style={{fontSize: "large", marginLeft: '4px', marginRight:'4px', borderRadius: '10px'}}>✳️</button>
-        <div style={{position: 'relative', height:0, width: 0, marginLeft:'35px'}}>
+        <div style={{position: 'relative', height:0, width: 0}}>
                 <div style={{position: 'absolute', height:'0px', width: '320px', zIndex: 1,}}>
                         <ul id="myMenu" style={{listStyle: "none inside", margin: 0,width: 'fit-content',  height: 'fit-cotent', maxHeight: '225px', overflowY: 'scroll', display: 'none', scrollbarWidth: 'none', background: 'white', marginLeft: 0, paddingLeft:0}} >
                         {
