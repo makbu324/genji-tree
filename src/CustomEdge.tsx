@@ -94,7 +94,7 @@ const CustomEdge: FC<EdgeProps> = ({
             borderRight: '26px solid '+ style.stroke,
             borderBottom: '5px solid transparent',
             display: 'none',
-          }}>
+          }}> 
             <span style={{
             position: 'absolute',
             marginLeft: 20,
